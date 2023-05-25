@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>with you</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #scene {
+            background-color: rgb(145, 151, 242);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .layer {
+            pointer-events: none;
+        }
+
+        h2 {
+            font-size: 18px;
+            width: 90%;
+        }
+
+        .col {
+            display: inline-block;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            width: 12.5%;
+            pointer-events: all;
+            overflow: initial;
+            margin: 0 0 30px;
+        }
+
+        .layer.main {
+            width: 150%;
+            position: absolute;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        .col a {
+            display: block;
+            margin: 15px;
+            overflow: hidden;
+            box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.37);
+        }
+
+        .col a .hover {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            bottom: -15px;
+            left: 15px;
+            z-index: 1;
+            color: white;
+        }
+
+        .col a .hover:after {
+            content: '';
+            position: absolut;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: rgb(130, 146, 236);
+            opacity: 0;
+            transition: 0.35s ease;
+        }
+
+        .col a .hover:hover:after {
+            opacity: 0.85;
+            transition: 0.35s ease;
+        }
+
+        .align-bottom {
+            position: absolute;
+            width: 100%;
+            bottom: 0%;
+            z-index: 2;
+            padding: 15px 20px;
+        }
+
+        .bg-img {
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+
+        @media only screen and (max-width:1200px) {
+            .layer .col {
+                width: 16%;
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            .layer .col {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="scene" data-scalar-y="150.0" data-scalar-x="100.0">
+        <div class="layer main" data-depth="1.0">
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>猫与少女</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./1.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>pink 眼镜</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./2.jpg);">
+
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>twice galss</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./3.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>工作女孩</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./4.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>连心手链</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./5.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>天使与恶魔之剑</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./6.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>两只小猫</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./7.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>镜中小人</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./8.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>自选与心选</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./9.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>偶尔的青涩</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./10.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>cool girl</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./11.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>cool boy</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./12.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>together with you</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./13.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>两只小黑猫</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./14.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>🐟你在一起</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./15.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>（⊙ｏ⊙）</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./16.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>Sarelia</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./17.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>暖冬</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./18.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>第五人格</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./19.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>破碎的镜与月</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./20.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>在路上</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./21.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>娃娃夹娃娃</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./22.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>学下去，向前走！</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./23.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>新时代炫酷手表</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./24.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>捞月</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./25.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>游园会之旅</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./26.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>CP29</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./27.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>black</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./28.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>pink & blue</h2>
+                        </div>
+                    </div>
+                    <div class="bg-img" style="background-image:url(./29.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>第一次的礼物</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./30.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>疯狂星期四</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./31.jpg);">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#">
+                    <div class="hover">
+                        <div class="pad align-bottom">
+                            <h2>打工男孩</h2>
+                        </div>
+
+                    </div>
+                    <div class="bg-img" style="background-image:url(./32.jpg);">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 导入插件 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
+
+    <script>
+        // 使用库
+        //定义一个名为 makeWinHeight 的函数，用于设置窗口高度和项目高度
+        var makeWinHeight = function () {
+            //获取窗口高度
+            var vh = $(window).height();
+            //将项目高度设置为窗口高度的一半
+            var projects = vh / 2;
+            //设置 id 为 scene 和 class 为 layer main 的元素的高度为窗口高度
+            $('#scene, .layer.main').height(vh);
+            //设置 id 为 scene 中 class 为 col 的元素的高度为项目高度，并将其子元素 a 的高度也设置为项目高度
+            $('#scene .col a, #scene .col').height(projects);
+        }
+        //在文档加载完成后执行 makeWinHeight 函数，以设置窗口高度和项目高度
+        $(document).ready(function () {
+            makeWinHeight();
+        });
+        //在窗口大小变化时，重新执行 makeWinHeight 函数以更新窗口高度和项目高度
+        $(window).resize(function () {
+            makeWinHeight();
+        });
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
+</body>
+
+</html>
